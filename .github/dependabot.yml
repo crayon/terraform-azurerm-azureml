@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directory: "/"
+    labels:
+      - "Type: Chore"
+    schedule:
+      interval: "weekly"
+    # Comment out or remove commit-message if you want to have dependabots PR trigger GitHub Actions
+    commit-message:
+      prefix: "[skip ci]"
