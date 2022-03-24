@@ -10,8 +10,4 @@ Those dependencies can be preconfigured and used within module or can be deploye
 
 This module is currently in development with missing features:
 * additional configurable parameters
-* outputs
-* GitHub workflows and issue templates
-* linting
 * missing documentation
-* missing examples
