@@ -15,6 +15,6 @@ provider "azurerm" {
 module "azureml" {
   source = "github.com/crayon/terraform-azurerm-azureml"
 
-  name = "azureml-demo"
+  name                = "azureml-demo"
   resource_group_name = "rg-azureml-demo"
 }

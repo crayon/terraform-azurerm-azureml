@@ -1,0 +1,34 @@
+name: terraform-checks
+
+on:
+  push:
+    paths:
+    - '**.tf'
+  pull_request:
+    branches:
+    - main
+    paths:
+    - '**.tf'
+
+jobs:
+  tflint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      name: "Checkout repository"
+    - uses: terraform-linters/setup-tflint@v1
+      name: "Setup TFLint"
+    - run: tflint -f compact
+      name: "Run TFLint"
+
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      name: "Checkout repository"
+    - uses: hashicorp/setup-terraform@v1
+      name: "Setup Terraform"
+    - run: terraform fmt -check -recursive
+      name: "Run TF format"
+    - run: terraform validate
+      name: "Run TF validate"
