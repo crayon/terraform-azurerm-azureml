@@ -10,7 +10,6 @@ resource "azurerm_storage_account" "main" {
 
   enable_https_traffic_only = true
   min_tls_version           = "TLS1_2"
-  allow_blob_public_access  = false
 
   identity {
     type = "SystemAssigned"
