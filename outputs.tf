@@ -14,7 +14,7 @@ output "container_registry_id" {
 }
 
 output "key_vault_id" {
-  description = "The object ID of Key Vault instance."
+  description = "The object ID of Azurer Key Vault."
   value       = var.key_vault_create == true ? azurerm_key_vault.main[0].id : data.azurerm_key_vault.main[0].id
 }
 

@@ -28,6 +28,8 @@ jobs:
       name: "Checkout repository"
     - uses: hashicorp/setup-terraform@v1
       name: "Setup Terraform"
+    - run: terraform init
+      name: "Run TF init"
     - run: terraform fmt -check -recursive
       name: "Run TF format"
     - run: terraform validate
