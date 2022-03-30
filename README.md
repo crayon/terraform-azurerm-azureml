@@ -10,9 +10,9 @@ Those dependencies can be preconfigured and used within module or can be deploye
 
 ## Requirements
 | | |
-|----------|-----------|
-|Terraform | >= 1.1.7  |
-| azurerm  | >= 2.99.0 |
+|-----------|--------|
+| Terraform | 1.1.7  |
+|  azurerm  | 3.0.2  |
 
 
 ## Example deployment
