@@ -9,10 +9,10 @@ A module to deploy AzureML workspace with all required dependencies on Azure, in
 Those dependencies can be preconfigured and used within module or can be deployed with this module.
 
 ## Requirements
-| | |
-|-----------|--------|
-| Terraform | 1.1.7  |
-|  azurerm  | 3.0.2  |
+| Resource  | Version |
+|-----------|---------|
+| Terraform |  1.1.7  |
+|  azurerm  |  3.0.2  |
 
 
 ## Example deployment
